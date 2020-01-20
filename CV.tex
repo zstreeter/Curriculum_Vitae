@@ -1,0 +1,255 @@
+\documentclass{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{0.001mm } % Set the width of the date box in each block
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox[t]{\datebox}{\small \textit{#1}} \hspace{1.5em}#2 #3  % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{cv}{\spacedallcaps{Zachary Streeter}}\vspace{1.5em} % Your name
+
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
+
+\NewEntry{}{\textit{Born in West Monroe, Louisiana,}}{$23$ May $1988$} % Birthplace and date
+
+\NewEntry{email}{\href{mailto:zacharylouis$42$@gmail.com}{zacharylouis$42$@gmail.com}} % Email address
+
+%\NewEntry{website}{\href{http://www.johnsmith.com}{http://www.johnsmith.com}} % Personal website
+\NewEntry{Adress}{$2314$ Bonar St. Berkeley, Ca $94702$}
+
+\NewEntry{phone}{(M) +$1$ ($318$) $614$ $6728$}  %Phone number(s) (H) +1 (000) 111 1111\ \ $\cdotp$\ \
+
+\NewEntry{Familial Status}{Single, no children}
+
+\vspace{1em} % Extra white space between the personal information section and goal
+
+\noindent\spacedlowsmallcaps{Goals}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
+
+\Description{Seek understanding while providing service to others.}\vspace{2em} % Goal text
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Internships and Research Positions}\vspace{1em}
+
+\NewEntry{2012--2013}{Synchrotron Radiation Center}
+
+\Description{\MarginText{SRC}Built gas handling systems, ran leak checks for high vacuum line, wrote Igor Pro code for data analysis, and worked on calibrating the monochrometer.  Also attended lectures in relativistic electrodynamics and worked on electrodynamic problem sets.\\ Reference: Gary \textsc{Findley}\ \  +$1$ ($318$) $342$ $1835$\ \ $\cdotp$\ \ \href{mailto:findley@ulm.edu}{findley@ulm.edu}}
+
+%------------------------------------------------
+
+\NewEntry{Summer 2014}{Center for Advanced Microstructures and Devices}
+
+\Description{\MarginText{CAMD}Became a user in order to continue research from SRC. \\ Reference: Cherice \textsc{Evans}\ \  +$1$ ($718$) $997$ $4216$\ \ $\cdotp$\ \ \href{mailto:cherice.evans@qc.cuny.edu}{cherice.evans@qc.cuny.edu}}
+
+%------------------------------------------------
+
+\NewEntry{Spring 2015}{Brookhaven National Laboratory}
+
+\Description{\MarginText{BNL}Performed experiments with soft X-rays utilizing the Linear Electron Accelerator Facility (LEAF) and the van de Graaff.  Prepared samples in glove box and worked on purifying Xenon. \\ Reference: Richard Holroyd\ \ +$1$ ($631$) $344$ $4329$\ \ $\cdotp$\ \ \href{mailto:holroydr@optonline.net}{holroydr@optonline.net}}
+
+\NewEntry{Summer 2016 to Present}{Lawrence Berkeley National Laboratory}
+
+\Description{\MarginText{LBNL}Created fully dimensional potential energy surfaces for H$_2$O$^{++}$ using MOLPRO and Columbus Quantum Chemistry packages.  Honed programming skills in C and Fortran.  Used NERSC supercomputers EDISON and CORI for running large parallel code.  Became proficient in parallel programing using PETSC, MPI, and OpenMP.  \\ Reference: Clyde W. McCurdy\ \ +$1$ ($510$) $486$ $4283$\ \ $\cdotp$\ \ \href{mailto:cwmmccurdy@lbl.gov}{cwmccurdy@lbl.gov}}
+
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Education}\vspace{1em}
+
+\NewEntry{2007-2009, 2011-2014}{The University of Louisiana, Monroe}
+
+\Description{\MarginText{Bachelor of Science}GPA: $3.46$\ \ $\cdotp$\ \ School: School of Sciences\newline
+Major (Concentration): Biology (Chemical Biology)\newline
+Personal Courses: Attended formal lectures in Statistical Mechanics, Quantum Mechanics, Electricity and Magnetism, and Relativistic Electrodynamics.\newline
+Advisor: Prof.~Gary \textsc{Findley} \& Prof.~Ann \textsc{Findley}}
+
+%------------------------------------------------
+
+\NewEntry{2015-present}{The University of California, Davis}
+
+\Description{\MarginText{Doctor of Philosophy}GPA: $3.6$\ \ $\cdotp$\ \ School: Chemistry\newline
+Description: This degree is a PhD in Theoretical Chemical Physics.\newline
+Advisor: Prof.~Clyde W. \textsc{McCurdy}}
+%------------------------------------------------
+
+\vspace{2em} % Extra space between major sections
+
+%---------------------------------------------------------------------------------------
+%TEACHING
+%---------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Teaching}\vspace{1em}
+
+\NewEntry{Spring 2015}{Queens College}
+
+\Description{\MarginText{Teaching Assistant}Taught second semester of freshman chemistry and the corresponding lab.  Created lab and recitation quizzes and was the sole arbiter as to how the courses were conducted .\newline
+Assisted Professor: Prof.~Cherice \textsc{Evans}}
+%------------------------------------------------
+
+\NewEntry{2015-2016}{University of California, Davis}
+
+\Description{\MarginText{Teaching Assistant}Taught freshman chemistry for two quarters.  Also taught quantum mechanics for physical chemistry students.}
+
+%----------------------------------------------------------------------------------------
+%	TALKS AND POSTER PRESENTATIONS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Talks and Posters Presented at Confrences}\vspace{1em}
+
+\Description{\MarginText{2013 SRC Users Meeting}Zachary Streeter, Kamil Krynski, C. M. Evans, and G. L. Findley, ``\textit{Quasi-Free electron in near critical point hydrogen and deuterium,}'' $2013$ SRC Users Meeting, University of Wisconsin Synchrotron Radiation Center, Stoughton, WI, September $27 - 28$, $2013$.}
+
+\Description{\MarginText{2013 SRC Users Meeting}Kamil Krynski, Zachary Streeter, C. M. Evans, and G. L. Findley, ``\textit{Field ionization and photoionization of CH$_3$I perturbed by diatomic molecules: electron scattering in H$_2$, HD, D$_2$, O$_2$ and CO,}'' $2013$ SRC Users Meeting,
+University of Wisconsin Synchrotron Radiation Center, Stoughton, WI, September $27 - 28$, $2013$.}
+
+\Description{\MarginText{2014 DAMOP}Cherice Evans, Kamil Krynski, Zachary Streeter, and G. L. Findley, ``\textit{Field Ionization and Photoionization of CH$_3$I Perturbed by Diatomic Molecules: Electron Scattering in H$_2$, D$_2$, O$_2$, and CO,}'' $45$$^{th}$ Annual Meeting of the APS Division of Atomic, Molecular, and Optical Physics, Madison, WI, June $2-6$, $2014$.}
+
+\Description{\MarginText{2014 DAMOP}Zachary Streeter, Kamil Krynski, C. M. Evans, and G. L. Findley, ``\textit{The energy of the quasi-free electron in near critical point H$_2$, D$_2$, and O$_2$,}'' $45$$^{th}$ Annual Meeting of the APS Division of Atomic, Molecular, and Optical Physics, Madison, WI, June $2-6$, $2014$.}
+
+\Description{\MarginText{2016 APS}Kamil Krynski, Zachary Streeter, C. M. Evans, and G. L. Findley, ``\textit{Energy of the Quasi-Free Electron in H$_2$, D$_2$, and O$_2$: Probing Intermolecular Potentials within the Local Wigner-Seitz Model,}'' American Physical Society March Meeting, Baltimore, MD, March $14-18$, $2016$.}
+
+\Description{\MarginText{2017 DAMOP}Zachary Streeter, Frank Yip, Dylan P. Reedy, Allen Landers, C. William McCurdy,
+``\textit{Classical trajectory studies on the dynamics of one-photon double
+photionization of H$_2$O,}" $48$$^{th}$ Annual Meeting of the APS Division of Atomic, Molecular, and Optical Physics , Sacramento, CA, June $5-9$, $2017$.}
+
+\Description{\MarginText{2018 ACS}Cherice M. Evans, Jennifer Hare, Baxter Flor, Kamil Krynski, Zachary Streeter, and G. L. Findley, ``\textit{Energy of the Quasi-Free Electron in CO and HD: Extension of the Local Wigner-Seitz Model to Polar Fluids,}" $225$$^{th}$ ACS National Meeting and Exposition, New Orleans, LA, March $18-22$, $2018$.}
+
+\Description{\MarginText{2019 DAMOP} Z. L. Streeter, and C. W. McCurdy,
+``\textit{Sequential dissociation of H$_2$O$^{++}$ following double
+photoionization}" $50$$^{th}$ Annual Meeting of the APS Division of Atomic,
+Molecular, and Optical Physics, Milwaukee, WI, May $27-31$, $2019$.}
+
+\vspace{1em} % Extra space between major sections
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Publications}\vspace{1em}
+
+\Description{\MarginText{Published}C. M. Evans, Kamil Krynski, Zachary Streeter, and G. L. Findley, ``\textit{Energy of the Quasi-free Electron in H$_2$, D$_2$ and O$_2$: Probing Intermolecular Potentials within the Local Wigner-Seitz Model,}'' J. Chem. Phys. $\mathbf{143}$, $224303$ ($2015$)"}
+
+\Description{\MarginText{Published}C. M. Evans, Baxter Flor, Kamil Krynski, Zachary Streeter, and G. L. Findley,``\textit{Energy of the Quasi-Free Electron in CO and HD: Probing Intermolecular Potentials within the Local Wigner-Seitz model,}'' J. Chem. Phys. $\mathbf{149}$, $064307$ ($2018$).}
+
+\Description{\MarginText{Published}Zachary L. Streeter, Frank L. Yip, Robert R. Lucchese, Benoit Gervais, and C. William McCurdy,``\textit{Dissociation dynamics of the water dication following one-photon double ionization I: Theory,}'' Phys. Rev. A, $\mathbf{98}$, $053429$ ($2018$).}
+
+\Description{\MarginText{Published}D. Reedy, J. B. Williams, B. Gaire, A. Gatton, M. Weller, A. Menssen, T. Bauer, K. Henrichs, Ph. Burzynski, B. Berry, Z. L. Streeter, J. Sartor, I. Ben-Itzhak, T. Jahnke, R. D\"orner, Th. Weber, and A. L. Landers,``\textit{Dissociation dynamics of the water dication following one-photon double ionization I: Experiment,}'' Phys. Rev. A, $\mathbf{98}$, $053430$ ($2018$).}
+
+
+\vspace{1em} % Extra space between major sections
+
+%---------------------------------------------------------------------------------------
+%RESEARCH INTEREST
+%---------------------------------------------------------------------------------------
+
+%Experimental------------------------------------------------------
+\spacedlowsmallcaps{Research Interests}\vspace{1em}
+
+\NewEntry{Experimental}{Molecular Electronic Spectroscopy}
+
+\Description{\ \ $\cdotp$\ \ Experimental applications of synchrotron radiation.}
+
+\Description{\ \ $\cdotp$\ \ Vacuum ultraviolet (VUV) spectroscopy of highly-excited states of atoms.}
+
+\Description{\ \ $\cdotp$\ \ Electric and magnetic field effects in the VUV.}
+
+\Description{\ \ $\cdotp$\ \ Applications of quantum defect theory to molecular Rydberg states.}
+
+\Description{\ \ $\cdotp$\ \ Rydberg/valence mixing.}
+
+%Theoretical---------------------------------------------------------
+\NewEntry{Theoretical}{Physics and Chemistry}
+
+\Description{\ \ $\cdotp$\ \ Quantum Information and Computation.}
+
+\Description{\ \ $\cdotp$\ \ Nonlinear chemical reaction kinetics.}
+
+\Description{\ \ $\cdotp$\ \ Scattering Theory.}
+
+\Description{\ \ $\cdotp$\ \ Symplectic Mechanics.}
+
+\Description{\ \ $\cdotp$\ \ Underlying Symmetries throughout Physics.}
+
+%----------------------------------------------------------------------------------------
+%	OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+%\spacedlowsmallcaps{Other Information}\vspace{1em}
+
+%\Description{\MarginText{Awards}2011\ \ $\cdotp$\ \ School of Business Postgraduate Scholarship}
+
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+%\Description{2010\ \ $\cdotp$\ \ Top Achiever Award -- Commerce}
+
+%------------------------------------------------
+
+%\vspace{1em}
+
+%\Description{\MarginText{Communication Skills}2010\ \ $\cdotp$\ \ Oral Presentation at the California Business Conference}
+
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+%\Description{2009\ \ $\cdotp$\ \ Poster at the Annual Business Conference in Oregon}
+
+%------------------------------------------------
+
+%\vspace{1em}
+
+%\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
+%\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
+
+%\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Mothertongue}
+
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+%\Description{\parbox{\langbox}{\textsc{Spanish}}\ \ $\cdotp$\ \ \ Intermediate (conversationally fluent)}
+
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+%\Description{\parbox{\langbox}{\textsc{Dutch}}\ \ $\cdotp$\ \ \ Basic (simple words and phrases only)}
+
+%\vspace{1em} % Negative vertical space to counteract the vertical space between every \Description command
+
+%------------------------------------------------
+
+%\Description{\MarginText{ Research Interests}Piano\ \ $\cdotp$\ \ Cooking\ \ $\cdotp$\ \ Running\ \ $\cdotp$\ \ Chess\ \ $\cdotp$\ \ Dancing}
+
+%----------------------------------------------------------------------------------------
+
+\end{cv}
+
+\end{document}
