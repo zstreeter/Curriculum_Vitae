@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/MacPorts 2020.54632_2) (preloaded format=pdflatex 2020.7.29)  14 SEP 2020 13:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/MacPorts 2020.54632_2) (preloaded format=pdflatex 2020.7.29)  14 SEP 2020 15:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -104,6 +104,12 @@ Package tocbasic Info: omitting babel extension for `lot'
 \c@table=\count175
 Class scrartcl Info: Redefining `\numberline' on input line 6178.
 \bibindent=\dimen134
+) (/opt/local/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+) (/opt/local/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 ) (/opt/local/share/texmf-texlive/tex/latex/classicthesis/classicthesis.sty
 Package: classicthesis 2018/06/03 v4.6 Typographic style for a classic-looking thesis
  (/opt/local/share/texmf-texlive/tex/latex/base/ifthen.sty
@@ -157,7 +163,7 @@ LaTeX Font Info:    Trying to load font information for T1+pplj on input line 20
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 ) (/opt/local/share/texmf-texlive/tex/latex/microtype/microtype.sty
 Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
-\MT@toks=\toks16
+\MT@toks=\toks18
 \MT@count=\count176
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen135
@@ -242,7 +248,7 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \aftertitleunit=\skip65
 \ttl@plus=\dimen149
 \ttl@minus=\dimen150
-\ttl@toksa=\toks17
+\ttl@toksa=\toks19
 \titlewidth=\dimen151
 \titlewidthlast=\dimen152
 \titlewidthfirst=\dimen153
@@ -458,8 +464,8 @@ Package: currvita 1999/09/13 v0.9i Typesetting a Curriculum Vitae
 \cvlabelskip=\skip104
 \cvlabelwidth=\skip105
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 13.
-Package hyperref Info: Option `breaklinks' set `true' on input line 13.
+Package hyperref Info: Option `colorlinks' set `true' on input line 15.
+Package hyperref Info: Option `breaklinks' set `true' on input line 15.
 \datebox=\skip106
  (/opt/local/share/texmf-texlive/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
@@ -468,29 +474,25 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 ) (./CV.aux)
 \openout1 = `CV.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Trying to load font information for OT1+pplj on input line 24.
- (/opt/local/share/texmf-texlive/tex/latex/psnfss/ot1pplj.fd
-File: ot1pplj.fd 2004/09/06 font definitions for OT1/pplj.
-)
-Package scrbase Info: activating english \contentsname on input line 24.
-Package scrbase Info: activating english \listfigurename on input line 24.
-Package scrbase Info: activating english \listtablename on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+Package scrbase Info: activating english \contentsname on input line 26.
+Package scrbase Info: activating english \listfigurename on input line 26.
+Package scrbase Info: activating english \listtablename on input line 26.
  (/opt/local/share/texmf-texlive/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count196
@@ -498,22 +500,22 @@ Package scrbase Info: activating english \listtablename on input line 24.
 \scratchbox=\box50
 \nofMPsegments=\count197
 \nofMParguments=\count198
-\everyMPshowfont=\toks18
+\everyMPshowfont=\toks20
 \MPscratchCnt=\count199
 \MPscratchDim=\dimen166
 \MPnumerator=\count266
 \makeMPintoPDFobject=\count267
-\everyMPtoPDFconversion=\toks19
+\everyMPtoPDFconversion=\toks21
 )
 \big@size=\dimen167
-LaTeX Info: Redefining \microtypecontext on input line 24.
+LaTeX Info: Redefining \microtypecontext on input line 26.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 24.
+LaTeX Info: Redefining \showhyphens on input line 26.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -524,7 +526,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring ON on input line 24.
+Package hyperref Info: Link coloring ON on input line 26.
  (/opt/local/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/opt/local/share/texmf-texlive/tex/latex/refcount/refcount.sty
@@ -534,9 +536,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count268
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
  (./CV.out) (./CV.out)
 \@outlinefile=\write3
 \openout3 = `CV.out'.
@@ -548,7 +550,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 24.
+(scrartcl)           before \begin{document} on input line 26.
  (/opt/local/share/texmf-texlive/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
  (/opt/local/share/texmf-texlive/tex/latex/bookmark/bkm-pdftex.def
@@ -557,23 +559,23 @@ Package auxhook Info: \AddLineBeginMainAux comes a little late,
 (auxhook)             because the main .aux file is already opened on input line 168.
 \BKM@id=\count269
 ))
-LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 32.
+LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 34.
  (/opt/local/share/texmf-texlive/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 32.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 34.
  (/opt/local/share/texmf-texlive/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 32.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 34.
  (/opt/local/share/texmf-texlive/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 32.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 34.
  (/opt/local/share/texmf-texlive/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 32.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 34.
  (/opt/local/share/texmf-texlive/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
@@ -582,98 +584,98 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (37.33385pt too wide) in paragraph at lines 46--46
-[]  [][]\OT1/pplj/m/n/10.95 (-20) https://www.linkedin.com/in/zachary-streeter-44a323102/[][] 
+Overfull \hbox (20.64093pt too wide) in paragraph at lines 48--48
+[]  [][]\T1/pplj/m/n/10.95 (-20) https://www.linkedin.com/in/zachary-streeter-44a323102/[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
-[]\OT1/pplj/m/it/10 (+20) Familial
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]\T1/pplj/m/it/10 (+20) Familial
  []
 
-Package microtype Info: Character `013' is missing
-(microtype)             in font `OT1/pplj/m/sc/9'.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/9'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
-[]\OT1/pplj/m/it/10 (+20) Summer
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
-[]\OT1/pplj/m/it/10 (+20) Spring
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
-[]\OT1/pplj/m/it/10 (+20) Summer
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
-\OT1/pplj/m/it/10 (+20) 2016 to
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-[]\OT1/pplj/m/it/10 (+20) 2007-2009,
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[]\T1/pplj/m/it/10 (+20) Computer
  []
 
 [1
 
 {/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-[]\OT1/pplj/m/it/10 (+20) 2015-
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+[]\T1/pplj/m/it/10 (+20) Summer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
-[]\OT1/pplj/m/it/10 (+20) Spring
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+\T1/pplj/m/it/10 (+20) 2016 to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
-[]\OT1/pplj/m/it/10 (+20) Spring
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
+[]\T1/pplj/m/it/10 (+20) Spring
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--179
-[]\OT1/pplj/m/it/10 (+20) Winter
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+[]\T1/pplj/m/it/10 (+20) Summer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--183
-[]\OT1/pplj/m/it/10 (+20) Spring
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+[]\T1/pplj/m/it/10 (+20) 2015-
  []
 
-[2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
-[]\OT1/pplj/m/it/10 (+20) Computer
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
+[]\T1/pplj/m/it/10 (+20) Spring
  []
 
-[4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--240
+[]\T1/pplj/m/it/10 (+20) 2007-2009,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+[]\T1/pplj/m/it/10 (+20) Spring
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
+[]\T1/pplj/m/it/10 (+20) Winter
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 272--272
+[]\T1/pplj/m/it/10 (+20) Spring
+ []
+
+[4] [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 386.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 386.
  (./CV.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 351.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 386.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 386.
 Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 351.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 386.
  ) 
 Here is how much of TeX's memory you used:
- 13788 strings out of 482556
- 266031 string characters out of 5952075
- 696471 words of memory out of 5000000
- 28985 multiletter control sequences out of 15000+600000
- 591289 words of font info for 276 fonts, out of 8000000 for 9000
+ 13958 strings out of 482556
+ 268432 string characters out of 5952075
+ 697996 words of memory out of 5000000
+ 29147 multiletter control sequences out of 15000+600000
+ 614960 words of font info for 280 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 58i,23n,81p,10097b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,23n,81p,10097b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/local/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/fpl/fplrc8a.pfb></opt/local/share/texmf-texlive/fonts/type1/public/fpl/fplrij8a.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/palatino/uplb8a.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on CV.pdf (4 pages, 111586 bytes).
+Output written on CV.pdf (5 pages, 114245 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 73729 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 69 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 70657 words of extra memory for PDF output out of 74296 (max. 10000000)
 

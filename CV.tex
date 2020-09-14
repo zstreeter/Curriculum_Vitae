@@ -4,6 +4,8 @@
 
 \newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
 \usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
 
@@ -14,10 +16,10 @@
 
 \newlength{\datebox}\settowidth{\datebox}{0.001mm } % Set the width of the date box in each block
 
-\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox[t]{\datebox}{\small \textit{#1}} \hspace{1.5em}#2 #3  % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\newcommand{\NewEntry}[3]{\noindent\hangindent=0.5em\hangafter=0 \parbox[t]{\datebox}{\small \textit{#1}} \hspace{1.5em}#2 #3  % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
 \vspace{0.5em}} % Add some white space after each new entry
 
-\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+\newcommand{\Description}[1]{\hangindent=0.5em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
 
 %----------------------------------------------------------------------------------------
 
@@ -37,7 +39,7 @@
 % \hline \vspace{1em}
 % \titlerule \vspace{1em}
 
-\NewEntry{}{\textit{Born in West Monroe, Louisiana,}}{$23$ May $1988$} % Birthplace and date
+% \NewEntry{}{\textit{Born in West Monroe, Louisiana,}}{$23$ May $1988$} % Birthplace and date
 
 \NewEntry{email}{\href{mailto:zacharylouis$42$@gmail.com}{zacharylouis$42$@gmail.com}} % Email address
 
@@ -47,7 +49,7 @@
 \NewEntry{github}{\href{https://github.com/zstreeter}{https://github.com/zstreeter}} % github
 
 %\NewEntry{website}{\href{http://www.johnsmith.com}{http://www.johnsmith.com}} % Personal website
-\NewEntry{Address}{$2314$ Bonar St. Berkeley, Ca $94702$}
+\NewEntry{Address}{$2314$ Bonar St. Berkeley, CA $94702$}
 
 \NewEntry{phone}{(M) +$1$ ($318$) $614$ $6728$}  %Phone number(s) (H) +1 (000) 111 1111\ \ $\cdotp$\ \
 
@@ -55,10 +57,85 @@
 
 \vspace{1em} % Extra white space between the personal information section and goal
 
-\noindent\spacedlowsmallcaps{Goals}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
+\noindent\spacedlowsmallcaps{Brief Introduction}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
 
-\Description{Seek understanding while providing service to others.}\vspace{2em} % Goal text
+\Description{A passionate, creative, and curious individual, with all qualities
+situated firmly on a foundation of work ethic. My passion leads me to problems
+that hopefully will create a better universal experience. My creativity leads me to
+problems that force me to mold or drop notions that I previously held. My curiousity
+allows me to listen and work with others that are not in my field. My work
+ethic allows my résumé to be read by people like you. Thank you for taking your
+time to read about me!
 
+If you would like, please follow the red links above to email me, link up on
+LinkedIn, and/or check out my github page!}
+
+\vspace{2em} % Goal text
+
+%Programming------------------------------------------------------
+\spacedlowsmallcaps{Technical Skills}\vspace{0.5em}
+
+% \titlerule \vspace{1em}
+\hrule \vspace{1em}
+
+\NewEntry{Software}{}
+
+\Description{\ \ \textsc{Compiled}\ \ $\cdotp$\ \ C, C++, Fortran, Cython.}
+
+\Description{\ \ \textsc{Parallel API}\ \ $\cdotp$\ \ MPI, OpenMP, Cuda, PETSC.}
+
+\Description{\ \ \textsc{Scripting}\ \ $\cdotp$\ \ Posix, Bash, Python.}
+
+\Description{\ \ \textsc{Build Process}\ \ $\cdotp$\ \ CMake, Make.}
+
+\Description{\ \ \textsc{Markup}\ \ $\cdotp$\ \ {\LaTeX}, Markdown, ReStructuredText.}
+
+\Description{\ \ \textsc{Debugger}\ \ $\cdotp$\ \ gdb, lldb, TotalView.}
+
+\Description{\ \ \textsc{Profiler}\ \ $\cdotp$\ \ Nsight/visual profiler, VTune.}
+
+\NewEntry{Workflow}{}
+
+\Description{\ \ \textsc{Editor}\ \ $\cdotp$\ \ Vim/Neovim.}
+
+\Description{\ \ \textsc{Multiplexer}\ \ $\cdotp$\ \ Tmux.}
+
+\Description{\ \ \textsc{Version-Control}\ \ $\cdotp$\ \ Git.}
+
+%---------------------------------------------------------------------------------------
+%RESEARCH INTEREST
+%---------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Research Interests}\vspace{0.5em}
+
+% \titlerule \vspace{1em}
+\hrule \vspace{1em}
+
+%Computer Science------------------------------------------------------
+\NewEntry{Computer Science}{High Performance Computing}
+
+\Description{\ \ $\cdotp$\ \ Numerical algorithms/methods.}
+
+\Description{\ \ $\cdotp$\ \ Computational geometry.}
+
+\Description{\ \ $\cdotp$\ \ Hybrid CPU/GPU Architectures.}
+
+\Description{\ \ $\cdotp$\ \ HPC in coordination with Quantum Computing.}
+
+%Theoretical---------------------------------------------------------
+\NewEntry{Theoretical}{Physics and Chemistry}
+
+\Description{\ \ $\cdotp$\ \ Quantum Information and Computation.}
+
+\Description{\ \ $\cdotp$\ \ Quantum Computers applied to quantum physics/chemistry.}
+
+\Description{\ \ $\cdotp$\ \ Nonlinear chemical reaction kinetics.}
+
+\Description{\ \ $\cdotp$\ \ Scattering Theory.}
+
+\Description{\ \ $\cdotp$\ \ Symplectic Mechanics.}
+
+\Description{\ \ $\cdotp$\ \ Underlying Symmetries throughout Physics.}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -66,8 +143,39 @@
 
 \noindent\spacedlowsmallcaps{Internships and Research Positions}\vspace{0.5em}
 
-% \titlerule \vspace{1em}
 \hrule \vspace{1em}
+
+\NewEntry{Summer 2016 to Present}{Lawrence Berkeley National Laboratory}
+
+\Description{\MarginText{LBNL}Created fully dimensional potential energy
+surfaces for H$_2$O$^{++}$ using MOLPRO and Columbus Quantum Chemistry packages.
+These hypersurfaces were then used in a MPI parallelized classical trajectory simulation of
+H$_2$O$^{++}$ breakup following double ionization. This work was essential to
+deduce the body-frame of the water molecule at the momentum of photo-absorption
+and resulted in two immediate papers while also providing a benchmark for
+intense field experimentalist that will be in print shortly. Created a novel
+suite of high-performance codes that calculate double-ionization cross section
+for water and can be easily modified to other polyatomics.
+In general, honed programming skills in C, C++, Fortran, and Python, while
+becoming a learned software developer devoted to best practices and good
+documentation.  Used NERSC
+supercomputers EDISON and CORI, and also a cluster called Lawrencium, for
+running large (e.g. $~40+$ physical cores with $~3000+$ processors) parallel batch jobs.  Became
+proficient in parallel programing using PETSC, MPI, CUDA, and OpenMP.  \\ Reference: Clyde W. McCurdy\ \ +$1$ ($510$) $486$ $4283$\ \ $\cdotp$\ \ \href{mailto:cwmmccurdy@lbl.gov}{cwmccurdy@lbl.gov}}
+
+\NewEntry{Spring 2015}{Brookhaven National Laboratory}
+
+\Description{\MarginText{BNL}Performed experiments with soft X-rays utilizing
+the Linear Electron Accelerator Facility (LEAF) and the van de Graaff.  Prepared
+samples in glove box and worked on purifying Xenon and CO. This work was essential in
+studying electron mobility through CO. Once this work was completed, we
+calculated the quasi-free electron energy resulting in a publication. Understanding the
+free-electron energy in various liquids is critical in order for those
+liquids to be used in scattering experiments. \\ Reference: Richard Holroyd\ \ +$1$ ($631$) $344$ $4329$\ \ $\cdotp$\ \ \href{mailto:holroydr@optonline.net}{holroydr@optonline.net}}
+
+\NewEntry{Summer 2014}{Center for Advanced Microstructures and Devices}
+
+\Description{\MarginText{CAMD}Became a user in order to continue research from SRC. \\ Reference: Cherice \textsc{Evans}\ \  +$1$ ($718$) $997$ $4216$\ \ $\cdotp$\ \ \href{mailto:cherice.evans@qc.cuny.edu}{cherice.evans@qc.cuny.edu}}
 
 \NewEntry{2012--2013}{Synchrotron Radiation Center}
 
@@ -75,23 +183,7 @@
 
 %------------------------------------------------
 
-\NewEntry{Summer 2014}{Center for Advanced Microstructures and Devices}
 
-\Description{\MarginText{CAMD}Became a user in order to continue research from SRC. \\ Reference: Cherice \textsc{Evans}\ \  +$1$ ($718$) $997$ $4216$\ \ $\cdotp$\ \ \href{mailto:cherice.evans@qc.cuny.edu}{cherice.evans@qc.cuny.edu}}
-
-%------------------------------------------------
-
-\NewEntry{Spring 2015}{Brookhaven National Laboratory}
-
-\Description{\MarginText{BNL}Performed experiments with soft X-rays utilizing the Linear Electron Accelerator Facility (LEAF) and the van de Graaff.  Prepared samples in glove box and worked on purifying Xenon. \\ Reference: Richard Holroyd\ \ +$1$ ($631$) $344$ $4329$\ \ $\cdotp$\ \ \href{mailto:holroydr@optonline.net}{holroydr@optonline.net}}
-
-\NewEntry{Summer 2016 to Present}{Lawrence Berkeley National Laboratory}
-
-\Description{\MarginText{LBNL}Created fully dimensional potential energy
-surfaces for H$_2$O$^{++}$ using MOLPRO and Columbus Quantum Chemistry packages.
-Honed programming skills in C, C++, Fortran, and Python.  Used NERSC
-supercomputers EDISON, Lawrencium, and CORI for running large parallel code.  Became
-proficient in parallel programing using PETSC, MPI, CUDA, and OpenMP.  \\ Reference: Clyde W. McCurdy\ \ +$1$ ($510$) $486$ $4283$\ \ $\cdotp$\ \ \href{mailto:cwmmccurdy@lbl.gov}{cwmccurdy@lbl.gov}}
 
 
 %------------------------------------------------
@@ -107,15 +199,6 @@ proficient in parallel programing using PETSC, MPI, CUDA, and OpenMP.  \\ Refere
 
 % \titlerule \vspace{1em}
 \hrule \vspace{1em}
-
-\NewEntry{2007-2009, 2011-2015}{The University of Louisiana, Monroe}
-
-\Description{\MarginText{Bachelor of Science}GPA: $3.46$\ \ $\cdotp$\ \ School: School of Sciences\newline
-Major (Concentration): Biology (Chemical Biology)\newline
-Personal Courses: Attended formal lectures in Statistical Mechanics, Quantum Mechanics, Electricity and Magnetism, and Relativistic Electrodynamics.\newline
-Advisor: Prof.~Gary \textsc{Findley} \& Prof.~Ann \textsc{Findley}}
-
-%------------------------------------------------
 
 \NewEntry{2015-present}{The University of California, Davis}
 
@@ -152,6 +235,14 @@ Professor: James \textsc{Demmel}\ \ $\cdotp$\ \
 \href{mailto:demmel@cs.berkeley.edu}{demmel@cs.berkeley.edu}\newline
 Professor: Aydin \textsc{Bulu\c{c}}\ \ $\cdotp$\ \
 \href{mailto:aydin@eecs.berkeley.edu}{aydin@eecs.berkeley.edu}}
+
+\NewEntry{2007-2009, 2011-2015}{The University of Louisiana, Monroe}
+
+\Description{\MarginText{Bachelor of Science}GPA: $3.46$\ \ $\cdotp$\ \ School: School of Sciences\newline
+Major (Concentration): Biology (Chemical Biology)\newline
+Personal Courses: Attended formal lectures in Statistical Mechanics, Quantum Mechanics, Electricity and Magnetism, and Relativistic Electrodynamics.\newline
+Advisor: Prof.~Gary \textsc{Findley} \& Prof.~Ann \textsc{Findley}}
+
 %------------------------------------------------
 
 \vspace{2em} % Extra space between major sections
@@ -165,23 +256,25 @@ Professor: Aydin \textsc{Bulu\c{c}}\ \ $\cdotp$\ \
 % \titlerule \vspace{1em}
 \hrule \vspace{1em}
 
+\NewEntry{Spring 2020}{University of California, Davis}
+
+\Description{\MarginText{Teaching Assistant}Time-Dependent Quantum Mechanics: The first part of this graduate course covers the basic concepts and techniques for solving the time-dependent Schrodinger equation. The initial portion explores the concepts of quantum superpositions, Gaussian wave packets for free and interacting particles, time propagation, the Schrodinger, interaction and Heisenberg representations, time-dependent density matrices, the Wigner phase space distribution, Ehrenfest's theorem, the connection between quantum and classical mechanics in the context of molecular dynamics, the semiclassical wave packet approximation, and time-dependent perturbation theory. The second part of the course turned to applications. Those included absorption and emission of electromagnetic radiation, correlation functions and spectra, molecular dynamics, potential energy surfaces, conical intersections, nonadiabatic transitions and variational transition state theory. .}
+
+\NewEntry{Winter 2020}{University of California, Davis}
+
+\Description{\MarginText{Teaching Assistant}Quantum Chemistry: a graduate level discussion of the principles of quantum mechanics and its application to (primarily) stationary state problems in atoms and molecules, including Hartree-Fock calculations of their electronic structure. Using the Psi4 quantum chemistry codes and the Python programming language we performed calculations on small molecules using restricted Hartree-Fock, unrestricted Hartree-Fock, Møller-Plesset perturbation theory (MP2), and configuration interaction (CI) and coupled cluster (CCSD) methods..}
+
+\NewEntry{2015-2016}{University of California, Davis}
+
+\Description{\MarginText{Teaching Assistant}Taught freshman chemistry for two quarters.  Also taught quantum mechanics for physical chemistry students.}
+
 \NewEntry{Spring 2015}{Queens College}
 
 \Description{\MarginText{Teaching Assistant}Taught second semester of freshman chemistry and the corresponding lab.  Created lab and recitation quizzes and was the sole arbiter as to how the courses were conducted .\newline
 Assisted Professor: Prof.~Cherice \textsc{Evans}}
 %------------------------------------------------
 
-\NewEntry{2015-2016}{University of California, Davis}
 
-\Description{\MarginText{Teaching Assistant}Taught freshman chemistry for two quarters.  Also taught quantum mechanics for physical chemistry students.}
-
-\NewEntry{Winter 2020}{University of California, Davis}
-
-\Description{\MarginText{Teaching Assistant}Quantum Chemistry: a graduate level discussion of the principles of quantum mechanics and its application to (primarily) stationary state problems in atoms and molecules, including Hartree-Fock calculations of their electronic structure. Using the Psi4 quantum chemistry codes and the Python programming language we performed calculations on small molecules using restricted Hartree-Fock, unrestricted Hartree-Fock, Møller-Plesset perturbation theory (MP2), and configuration interaction (CI) and coupled cluster (CCSD) methods..}
-
-\NewEntry{Spring 2020}{University of California, Davis}
-
-\Description{\MarginText{Teaching Assistant}Time-Dependent Quantum Mechanics: The first part of this graduate course covers the basic concepts and techniques for solving the time-dependent Schrodinger equation. The initial portion explores the concepts of quantum superpositions, Gaussian wave packets for free and interacting particles, time propagation, the Schrodinger, interaction and Heisenberg representations, time-dependent density matrices, the Wigner phase space distribution, Ehrenfest's theorem, the connection between quantum and classical mechanics in the context of molecular dynamics, the semiclassical wave packet approximation, and time-dependent perturbation theory. The second part of the course turned to applications. Those included absorption and emission of electromagnetic radiation, correlation functions and spectra, molecular dynamics, potential energy surfaces, conical intersections, nonadiabatic transitions and variational transition state theory. .}
 %----------------------------------------------------------------------------------------
 %	TALKS AND POSTER PRESENTATIONS
 %----------------------------------------------------------------------------------------
@@ -240,64 +333,6 @@ Molecular, and Optical Physics, Milwaukee, WI, May $27-31$, $2019$.}
 % Languages
 %---------------------------------------------------------------------------------------
 
-%Programming------------------------------------------------------
-\spacedlowsmallcaps{Technical Skills}\vspace{0.5em}
-
-% \titlerule \vspace{1em}
-\hrule \vspace{1em}
-
-\NewEntry{Software}{}
-
-\Description{\ \ \textsc{Compiled}\ \ $\cdotp$\ \ C, C++, Fortran, Cython.}
-
-\Description{\ \ \textsc{Parallel API}\ \ $\cdotp$\ \ MPI, OpenMP, Cuda, PETSC.}
-
-\Description{\ \ \textsc{Scripting}\ \ $\cdotp$\ \ Posix, Bash, Python.}
-
-\Description{\ \ \textsc{Markup}\ \ $\cdotp$\ \ {\LaTeX}, Markdown.}
-
-\NewEntry{Workflow}{}
-
-\Description{\ \ \textsc{Editor}\ \ $\cdotp$\ \ Vim.}
-
-\Description{\ \ \textsc{Multiplexer}\ \ $\cdotp$\ \ Tmux.}
-
-\Description{\ \ \textsc{Version-Control}\ \ $\cdotp$\ \ Git.}
-
-%---------------------------------------------------------------------------------------
-%RESEARCH INTEREST
-%---------------------------------------------------------------------------------------
-
-\spacedlowsmallcaps{Research Interests}\vspace{0.5em}
-
-% \titlerule \vspace{1em}
-\hrule \vspace{1em}
-
-%Computer Science------------------------------------------------------
-\NewEntry{Computer Science}{High Performance Computing}
-
-\Description{\ \ $\cdotp$\ \ Numerical algorithms/methods.}
-
-\Description{\ \ $\cdotp$\ \ Computational geometry.}
-
-\Description{\ \ $\cdotp$\ \ Embedded boundary conditions.}
-
-\Description{\ \ $\cdotp$\ \ GPU Architectures.}
-
-%Theoretical---------------------------------------------------------
-\NewEntry{Theoretical}{Physics and Chemistry}
-
-\Description{\ \ $\cdotp$\ \ Quantum Information and Computation.}
-
-\Description{\ \ $\cdotp$\ \ Quantum Computers applied to quantum physics/chemistry.}
-
-\Description{\ \ $\cdotp$\ \ Nonlinear chemical reaction kinetics.}
-
-\Description{\ \ $\cdotp$\ \ Scattering Theory.}
-
-\Description{\ \ $\cdotp$\ \ Symplectic Mechanics.}
-
-\Description{\ \ $\cdotp$\ \ Underlying Symmetries throughout Physics.}
 
 %----------------------------------------------------------------------------------------
 %	OTHER INFORMATION
