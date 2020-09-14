@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1600114546 "CV.tex" "CV.pdf" "CV" 1600114548
+["pdflatex"] 1600117400 "CV.tex" "CV.pdf" "CV" 1600117402
   "/opt/local/etc/texmf/texmf.cnf" 1596081577 37502 a2c46aa384b16a72318336d2c540376f ""
   "/opt/local/share/texmf-texlive/fonts/enc/dvips/base/8r.enc" 1556757300 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/local/share/texmf-texlive/fonts/map/fontname/texfonts.map" 1583632499 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -115,11 +115,11 @@
   "/opt/local/share/texmf-texlive/tex/latex/xcolor/xcolor.sty" 1556758001 55589 34128738f682d033422ca125f82e5d62 ""
   "/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map" 1596125066 4668073 0e919c2dffd247a8fc5fdc431502be4c ""
   "/opt/local/var/db/texmf/web2c/pdftex/pdflatex.fmt" 1596082178 1146625 40019591e12abddd1fa98c3e769e18d6 ""
-  "CV.aux" 1600114547 1405 dbd8e40f0d631f593ca55a965e932153 "pdflatex"
-  "CV.out" 1600114547 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "CV.tex" 1600114545 21563 ededaae136190f8e72dbcf4f650dc7db ""
+  "CV.aux" 1600117402 1405 dbd8e40f0d631f593ca55a965e932153 "pdflatex"
+  "CV.out" 1600117401 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "CV.tex" 1600117399 21604 038b47d3d2f9b1de0e3ab61caa7f526b ""
   (generated)
-  "CV.log"
-  "CV.out"
   "CV.pdf"
   "CV.aux"
+  "CV.log"
+  "CV.out"
