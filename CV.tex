@@ -1,9 +1,8 @@
 \documentclass{scrartcl}
 
-\reversemarginpar % Move the margin to the left of the page
+\reversemarginpar% Move the margin to the left of the page
 
 \newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
-
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
@@ -41,7 +40,7 @@
 
 % \NewEntry{}{\textit{Born in West Monroe, Louisiana,}}{$23$ May $1988$} % Birthplace and date
 
-\NewEntry{email}{\href{mailto:zacharylouis$42$@gmail.com}{zacharylouis$42$@gmail.com}} % Email address
+\NewEntry{email}{\href{mailto:zacharylouis42@gmail.com}{zacharylouis$42$@gmail.com}} % Email address
 
 \NewEntry{LinkedIn}{\href{https://www.linkedin.com/in/zachary-streeter-44a323102/}{https://www.linkedin.com/in/zachary-streeter-44a323102/}}
 % LinkedIn
@@ -49,23 +48,29 @@
 \NewEntry{github}{\href{https://github.com/zstreeter}{https://github.com/zstreeter}} % github
 
 %\NewEntry{website}{\href{http://www.johnsmith.com}{http://www.johnsmith.com}} % Personal website
-\NewEntry{Address}{$2314$ Bonar St. Berkeley, CA $94702$}
+% \NewEntry{Address}{$7000$ Gentle Oak Dr. Austin, Tx $78749$}
 
-\NewEntry{phone}{(M) +$1$ ($318$) $614$ $6728$}  %Phone number(s) (H) +1 (000) 111 1111\ \ $\cdotp$\ \
+% \NewEntry{phone}{(M) +$1$ ($318$) $614$ $6728$}  %Phone number(s) (H) +1 (000) 111 1111\ \ $\cdotp$\ \
 
-\NewEntry{Familial Status}{Single, no children}
+% \NewEntry{Familial Status}{Single, no children}
 
 \vspace{1em} % Extra white space between the personal information section and goal
 
 \noindent\spacedlowsmallcaps{Brief Introduction}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
 
-\Description{A passionate, creative, and curious individual, with all qualities
-situated firmly on a foundation of work ethic. My passion leads me to problems
-that hopefully will create a better universal experience. My creativity leads me to
-problems that force me to mold or drop notions that I previously held. My curiousity
-allows me to listen and work with others that are not in my field. My work
-ethic allows my résumé to be read by people in your position. Thank you for taking your
-time to read about me!
+\Description{My formal training is in computational physics and chemistry. 
+These fields, in particular, have had limited success because of their 
+massive combinatorial search spaces. This has lead to approximate techniques 
+like density-functional theory (DFT) in quantum chemistry. However, these 
+approximate techniques haven't yielded \textit{ab-initio} understanding 
+which, in some ways, has lead to stagnation. There are two novel solution 
+paths for these statistically daunting areas of study, namely quantum 
+computing and AI. With this in mind I have begun my career after my Ph.D., 
+in AI. With this industry experience, I will create tools that leverage 
+AI for teaching science with an initial objective of teaching physics. 
+As these tools mature, I hope they will lead to \textit{ab initio} 
+understanding of emergent phenomena in physics and other fields like 
+biology. This should keep me busy the rest of my life.\newline
 
 If you would like, please follow the red links above to email me, link up on
 LinkedIn, and/or check out my github page!}
@@ -80,19 +85,21 @@ LinkedIn, and/or check out my github page!}
 
 \NewEntry{Software}{}
 
-\Description{\ \ \textsc{Compiled}\ \ $\cdotp$\ \ C, C++, Fortran, Cython.}
+\Description{\ \ \textsc{Compiled}\ \ $\cdotp$\ \ C(proficient), C++(proficient), Fortran(proficient), Cython(prior experience).}
 
-\Description{\ \ \textsc{Parallel API}\ \ $\cdotp$\ \ MPI, OpenMP, Cuda, PETSC.}
+\Description{\ \ \textsc{Parallel API}\ \ $\cdotp$\ \ MPI(proficient), OpenMP(proficient), Cuda(prior experience), PETSc(proficient), SLEPc(proficient).}
 
-\Description{\ \ \textsc{Scripting}\ \ $\cdotp$\ \ Posix, Bash, Python.}
+\Description{\ \ \textsc{Scripting}\ \ $\cdotp$\ \ Posix(prior experience), Bash(proficient), Python(proficient).}
 
-\Description{\ \ \textsc{Build Process}\ \ $\cdotp$\ \ CMake, Make.}
+\Description{\ \ \textsc{Build Process}\ \ $\cdotp$\ \ CMake(proficient), Make(proficient).}
 
-\Description{\ \ \textsc{Markup}\ \ $\cdotp$\ \ {\LaTeX}, Markdown, ReStructuredText.}
+\Description{\ \ \textsc{Markup}\ \ $\cdotp$\ \ {\LaTeX}(expert), Markdown(proficient), ReStructuredText(proficient).}
 
-\Description{\ \ \textsc{Debugger}\ \ $\cdotp$\ \ gdb, lldb, TotalView.}
+\Description{\ \ \textsc{Debugger}\ \ $\cdotp$\ \ gdb(proficient), lldb(proficient), TotalView(prior experience).}
 
-\Description{\ \ \textsc{Profiler}\ \ $\cdotp$\ \ Nsight/visual profiler, VTune.}
+\Description{\ \ \textsc{Profiler}\ \ $\cdotp$\ \ Nsight/visual profiler(prior exexperience), VTune(prior experience).}
+
+\Description{\ \ \textsc{Scheduler}\ \ $\cdotp$\ \ SLURM(proficient).}
 
 \NewEntry{Workflow}{}
 
@@ -114,18 +121,26 @@ LinkedIn, and/or check out my github page!}
 %Computer Science------------------------------------------------------
 \NewEntry{Computer Science}{High Performance Computing}
 
+\Description{\ \ $\cdotp$\ \ Deep Learning.}
+
 \Description{\ \ $\cdotp$\ \ Numerical algorithms/methods.}
+
+\Description{\ \ $\cdotp$\ \ Finite-Element Methods.}
 
 \Description{\ \ $\cdotp$\ \ Computational geometry.}
 
+\Description{\ \ $\cdotp$\ \ Computational physics/chemistry.}
+
 \Description{\ \ $\cdotp$\ \ Hybrid CPU/GPU Architectures.}
 
-\Description{\ \ $\cdotp$\ \ HPC in coordination with Quantum Computing.}
+\Description{\ \ $\cdotp$\ \ HPC and low level optimization.}
 
 %Theoretical---------------------------------------------------------
 \NewEntry{Theoretical}{Physics and Chemistry}
 
 \Description{\ \ $\cdotp$\ \ Quantum Information and Computation.}
+
+\Description{\ \ $\cdotp$\ \ Deep Learning applied to quantum physics/chemistry.}
 
 \Description{\ \ $\cdotp$\ \ Quantum Computers applied to quantum physics/chemistry.}
 
@@ -140,12 +155,29 @@ LinkedIn, and/or check out my github page!}
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
+\noindent\spacedlowsmallcaps{Jobs}\vspace{0.5em}
+
+\hrule \vspace{1em}
+
+\NewEntry{September 2021 to present}{Advanced Micro Devices}
+
+\Description{\MarginText{AMD}Part of the Deep Learning Frameworks team. Worked on
+improving novel AI models with end-to-end specifications for AMD hardware. Used profilers
+to pin-point bottlenecks and further optimized kernels. Directed projects that contributed
+to company's AI direction at large. Worked with several large clients in numerous asks. 
+Furthered understanding of AI research directions and advised how AMD can leverage these 
+novel neural-network architectures.\newline
+Manager: Peng \textsc{Sun}\ \ $\cdotp$\ \ \href{mailto:Peng.Sun@amd.com}{Peng.Sun@amd.com}}
+
+%----------------------------------------------------------------------------------------
+%	INTERNSHIPS and RESEARCH EXPERIENCE
+%----------------------------------------------------------------------------------------
 
 \noindent\spacedlowsmallcaps{Internships and Research Positions}\vspace{0.5em}
 
 \hrule \vspace{1em}
 
-\NewEntry{Summer 2016 to Present}{Lawrence Berkeley National Laboratory}
+\NewEntry{Summer 2016 to August 2021}{Lawrence Berkeley National Laboratory}
 
 \Description{\MarginText{LBNL}Created fully dimensional potential energy
 surfaces for H$_2$O$^{++}$ using MOLPRO and Columbus Quantum Chemistry packages.
@@ -157,25 +189,27 @@ intense field experimentalist that will be in print shortly. Created a novel
 suite of high-performance codes that calculate double-ionization cross section
 for water and can be easily modified to other polyatomics.
 In general, honed programming skills in C, C++, Fortran, and Python, while
-becoming a learned software developer devoted to best practices and good
+becoming a learned software developer devoted to best practices, high
+performance, and good
 documentation.  Used NERSC
 supercomputers EDISON and CORI, and also a cluster called Lawrencium, for
 running large parallel batch jobs (e.g. $~40+$ physical cores with $~3000+$ processors).  Became
-proficient in parallel programing using PETSC, MPI, CUDA, and OpenMP.  \\ Reference: Clyde W. McCurdy\ \ +$1$ ($510$) $486$ $4283$\ \ $\cdotp$\ \ \href{mailto:cwmmccurdy@lbl.gov}{cwmccurdy@lbl.gov}}
+proficient in parallel programing using PETSC, MPI, CUDA, and OpenMP.\@ \\ Reference: Clyde W. McCurdy\ \ +$1$ ($510$) $486$ $4283$\ \ $\cdotp$\ \ \href{mailto:cwmmccurdy@lbl.gov}{cwmccurdy@lbl.gov}}
 
 \NewEntry{Spring 2015}{Brookhaven National Laboratory, SULI internship}
 
 \Description{\MarginText{BNL}Performed experiments with soft X-rays utilizing
 the Linear Electron Accelerator Facility (LEAF) and the van de Graaff.  Prepared
-samples in glove box and worked on purifying Xenon and CO. This work was essential in
-studying electron mobility through CO. Once this work was completed, we
+samples in glove box and worked on purifying Xenon and CO.\@ This work was essential in
+studying electron mobility through CO.\@ Once this work was completed, we
 calculated the quasi-free electron energy resulting in a publication. Understanding the
 free-electron energy in various liquids is critical in order for those
 liquids to be used in scattering experiments. \\ Reference: Richard Holroyd\ \ +$1$ ($631$) $344$ $4329$\ \ $\cdotp$\ \ \href{mailto:holroydr@optonline.net}{holroydr@optonline.net}}
 
 \NewEntry{Summer 2014}{Center for Advanced Microstructures and Devices}
 
-\Description{\MarginText{CAMD}Became a user in order to continue research from SRC. \\ Reference: Cherice \textsc{Evans}\ \  +$1$ ($718$) $997$ $4216$\ \ $\cdotp$\ \ \href{mailto:cherice.evans@qc.cuny.edu}{cherice.evans@qc.cuny.edu}}
+\Description{\MarginText{CAMD}Became a user in order to continue research from
+SRC.\@ \\ Reference: Cherice \textsc{Evans}\ \  +$1$ ($718$) $997$ $4216$\ \ $\cdotp$\ \ \href{mailto:cherice.evans@qc.cuny.edu}{cherice.evans@qc.cuny.edu}}
 
 \NewEntry{2012--2013}{Synchrotron Radiation Center}
 
@@ -194,9 +228,9 @@ liquids to be used in scattering experiments. \\ Reference: Richard Holroyd\ \ +
 % \titlerule \vspace{1em}
 \hrule \vspace{1em}
 
-\NewEntry{Spring 2020}{quantumGrid}
+\NewEntry{Spring 2020}{\href{https://quantumgrid.readthedocs.io/en/latest/}{quantumGrid}} % github
 
-\Description{\MarginText{Author}quantumGrid is a python package for solving a $1$-D
+\Description{\MarginText{Author and Maintainer}quantumGrid is a python package for solving a $1$-D
 Schrödinger equation for an arbitrary potential on any interval. The heart of
 this package is using a Finite Element Method with a Discrete Variable
 Representation (FEM-DVR) grid to solve the time-dependent or time-independent
@@ -205,7 +239,9 @@ numerically accurate integration and also allows for a natural application of
 outgoing scattering boundary conditions by adding a complex tail as the last
 finite element of the FEM-DVR grid, called exterior complex scaling (ECS). This
 project was created for a graduate course in time-dependent quantum
-mechanics at UC Davis. .}
+mechanics at UC Davis.
+
+Click on the read hyperlink to find out more!}
 
 %------------------------------------------------
 
@@ -222,9 +258,9 @@ mechanics at UC Davis. .}
 % \titlerule \vspace{1em}
 \hrule \vspace{1em}
 
-\NewEntry{2015-present}{The University of California, Davis}
+\NewEntry{2015-August 2021}{The University of California, Davis}
 
-\Description{\MarginText{Doctor of Philosophy}GPA: $3.9$\ \ $\cdotp$\ \ School: Chemistry\newline
+\Description{\MarginText{Doctor of Philosophy}GPA:\@ $3.9$\ \ $\cdotp$\ \ School: Chemistry\newline
 Description: This degree is a PhD in Theoretical Chemical Physics.\newline
 Advisors: Prof.~Clyde W. \textsc{McCurdy}, Prof.~Robert. \textsc{Lucchese} (LBNL)}
 
@@ -260,9 +296,9 @@ Professor: James \textsc{Demmel}\ \ $\cdotp$\ \
 Professor: Aydin \textsc{Bulu\c{c}}\ \ $\cdotp$\ \
 \href{mailto:aydin@eecs.berkeley.edu}{aydin@eecs.berkeley.edu}}
 
-\NewEntry{2007-2009, 2011-2015}{The University of Louisiana, Monroe}
+\NewEntry{2007--2009, 2011--2015}{The University of Louisiana, Monroe}
 
-\Description{\MarginText{Bachelor of Science}GPA: $3.46$\ \ $\cdotp$\ \ School: School of Sciences\newline
+\Description{\MarginText{Bachelor of Science}GPA:\@ $3.46$\ \ $\cdotp$\ \ School: School of Sciences\newline
 Major (Concentration): Biology (Chemical Biology)\newline
 Personal Courses: Attended formal lectures in Statistical Mechanics, Quantum Mechanics, Electricity and Magnetism, and Relativistic Electrodynamics.\newline
 Advisor: Prof.~Gary \textsc{Findley} \& Prof.~Ann \textsc{Findley}}
@@ -282,13 +318,13 @@ Advisor: Prof.~Gary \textsc{Findley} \& Prof.~Ann \textsc{Findley}}
 
 \NewEntry{Spring 2020}{University of California, Davis}
 
-\Description{\MarginText{Teaching Assistant}Time-Dependent Quantum Mechanics: The first part of this graduate course covers the basic concepts and techniques for solving the time-dependent Schrödinger equation. The initial portion explores the concepts of quantum superpositions, Gaussian wave packets for free and interacting particles, time propagation, the Schrödinger, interaction and Heisenberg representations, time-dependent density matrices, the Wigner phase space distribution, Ehrenfest's theorem, the connection between quantum and classical mechanics in the context of molecular dynamics, the semiclassical wave packet approximation, and time-dependent perturbation theory. The second part of the course turned to applications. Those included absorption and emission of electromagnetic radiation, correlation functions and spectra, molecular dynamics, potential energy surfaces, conical intersections, nonadiabatic transitions and variational transition state theory. .}
+\Description{\MarginText{Teaching Assistant}Time-Dependent Quantum Mechanics: The first part of this graduate course covers the basic concepts and techniques for solving the time-dependent Schrödinger equation. The initial portion explores the concepts of quantum superpositions, Gaussian wave packets for free and interacting particles, time propagation, the Schrödinger, interaction and Heisenberg representations, time-dependent density matrices, the Wigner phase space distribution, Ehrenfest's theorem, the connection between quantum and classical mechanics in the context of molecular dynamics, the semiclassical wave packet approximation, and time-dependent perturbation theory. The second part of the course turned to applications. Those included absorption and emission of electromagnetic radiation, correlation functions and spectra, molecular dynamics, potential energy surfaces, conical intersections, nonadiabatic transitions and variational transition state theory.}
 
 \NewEntry{Winter 2020}{University of California, Davis}
 
 \Description{\MarginText{Teaching Assistant}Quantum Chemistry: a graduate level discussion of the principles of quantum mechanics and its application to (primarily) stationary state problems in atoms and molecules, including Hartree-Fock calculations of their electronic structure. Using the Psi4 quantum chemistry codes and the Python programming language we performed calculations on small molecules using restricted Hartree-Fock, unrestricted Hartree-Fock, Møller-Plesset perturbation theory (MP2), and configuration interaction (CI) and coupled cluster (CCSD) methods..}
 
-\NewEntry{2015-2016}{University of California, Davis}
+\NewEntry{2015--2016}{University of California, Davis}
 
 \Description{\MarginText{Teaching Assistant}Taught freshman chemistry for two
 quarters.  My third quarter I taught quantum mechanics for physical chemistry
@@ -297,7 +333,7 @@ spectroscopy courses.}
 
 \NewEntry{Spring 2015}{Queens College}
 
-\Description{\MarginText{Teaching Assistant}Taught second semester of freshman chemistry and the corresponding lab.  Created lab and recitation quizzes and was the sole arbiter as to how the courses were conducted .\newline
+\Description{\MarginText{Teaching Assistant}Taught second semester of freshman chemistry and the corresponding lab.  Created lab and recitation quizzes and was the sole arbiter as to how the courses were conducted.\newline
 Assisted Professor: Prof.~Cherice \textsc{Evans}}
 %------------------------------------------------
 
@@ -315,25 +351,37 @@ Assisted Professor: Prof.~Cherice \textsc{Evans}}
 \Description{\MarginText{2013 SRC Users Meeting}Kamil Krynski, Zachary Streeter, C. M. Evans, and G. L. Findley, ``\textit{Field ionization and photoionization of CH$_3$I perturbed by diatomic molecules: electron scattering in H$_2$, HD, D$_2$, O$_2$ and CO,}'' $2013$ SRC Users Meeting,
 University of Wisconsin Synchrotron Radiation Center, Stoughton, WI, September $27 - 28$, $2013$.}
 
-\Description{\MarginText{2014 DAMOP}Cherice Evans, Kamil Krynski, Zachary Streeter, and G. L. Findley, ``\textit{Field Ionization and Photoionization of CH$_3$I Perturbed by Diatomic Molecules: Electron Scattering in H$_2$, D$_2$, O$_2$, and CO,}'' $45$$^{th}$ Annual Meeting of the APS Division of Atomic, Molecular, and Optical Physics, Madison, WI, June $2-6$, $2014$.}
+\Description{\MarginText{2014 DAMOP}Cherice Evans, Kamil Krynski, Zachary
+Streeter, and G. L. Findley, ``\textit{Field Ionization and Photoionization of
+CH$_3$I Perturbed by Diatomic Molecules: Electron Scattering in H$_2$, D$_2$,
+O$_2$, and CO,}'' $45$$^{th}$ Annual Meeting of the APS Division of Atomic,
+Molecular, and Optical Physics, Madison, WI, June $2--6$, $2014$.}
 
-\Description{\MarginText{2014 DAMOP}Zachary Streeter, Kamil Krynski, C. M. Evans, and G. L. Findley, ``\textit{The energy of the quasi-free electron in near critical point H$_2$, D$_2$, and O$_2$,}'' $45$$^{th}$ Annual Meeting of the APS Division of Atomic, Molecular, and Optical Physics, Madison, WI, June $2-6$, $2014$.}
+\Description{\MarginText{2014 DAMOP}Zachary Streeter, Kamil Krynski, C. M.
+Evans, and G. L. Findley, ``\textit{The energy of the quasi-free electron in
+near critical point H$_2$, D$_2$, and O$_2$,}'' $45$$^{th}$ Annual Meeting of
+the APS Division of Atomic, Molecular, and Optical Physics, Madison, WI, June
+$2--6$, $2014$.}
 
 \Description{\MarginText{2016 APS}Kamil Krynski, Zachary Streeter, C. M. Evans, and G. L. Findley, ``\textit{Energy of the Quasi-Free Electron in H$_2$, D$_2$, and O$_2$: Probing Intermolecular Potentials within the Local Wigner-Seitz Model,}'' American Physical Society March Meeting, Baltimore, MD, March $14-18$, $2016$.}
 
 \Description{\MarginText{2017 DAMOP}Zachary Streeter, Frank Yip, Dylan P. Reedy, Allen Landers, C. William McCurdy,
 ``\textit{Classical trajectory studies on the dynamics of one-photon double
-photionization of H$_2$O,}" $48$$^{th}$ Annual Meeting of the APS Division of Atomic, Molecular, and Optical Physics , Sacramento, CA, June $5-9$, $2017$.}
+photionization of H$_2$O,}`` $48$$^{th}$ Annual Meeting of the APS Division of
+Atomic, Molecular, and Optical Physics , Sacramento, CA, June $5--9$, $2017$.}
 
-\Description{\MarginText{2018 ACS}Cherice M. Evans, Jennifer Hare, Baxter Flor, Kamil Krynski, Zachary Streeter, and G. L. Findley, ``\textit{Energy of the Quasi-Free Electron in CO and HD: Extension of the Local Wigner-Seitz Model to Polar Fluids,}" $225$$^{th}$ ACS National Meeting and Exposition, New Orleans, LA, March $18-22$, $2018$.}
+\Description{\MarginText{2018 ACS}Cherice M. Evans, Jennifer Hare, Baxter Flor,
+Kamil Krynski, Zachary Streeter, and G. L. Findley, ``\textit{Energy of the
+Quasi-Free Electron in CO and HD:\@ Extension of the Local Wigner-Seitz Model to
+Polar Fluids,}`` $225$$^{th}$ ACS National Meeting and Exposition, New Orleans,
+LA, March $18--22$, $2018$.}
 
 \Description{\MarginText{2019 DAMOP} Z. L. Streeter, and C. W. McCurdy,
 ``\textit{Sequential dissociation of H$_2$O$^{++}$ following double
-photoionization}" $50$$^{th}$ Annual Meeting of the APS Division of Atomic,
-Molecular, and Optical Physics, Milwaukee, WI, May $27-31$, $2019$.}
+photoionization}`` $50$$^{th}$ Annual Meeting of the APS Division of Atomic,
+Molecular, and Optical Physics, Milwaukee, WI, May $27--31$, $2019$.}
 
 \vspace{1em} % Extra space between major sections
-
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
@@ -344,13 +392,24 @@ Molecular, and Optical Physics, Milwaukee, WI, May $27-31$, $2019$.}
 % \titlerule \vspace{1em}
 \hrule \vspace{1em}
 
-\Description{\MarginText{Published}C. M. Evans, Kamil Krynski, Zachary Streeter, and G. L. Findley, ``\textit{Energy of the Quasi-free Electron in H$_2$, D$_2$ and O$_2$: Probing Intermolecular Potentials within the Local Wigner-Seitz Model,}'' J. Chem. Phys. $\mathbf{143}$, $224303$ ($2015$)"}
+\Description{\MarginText{Published}C. M. Evans, Kamil Krynski, Zachary Streeter,
+and G. L. Findley, ``\textit{Energy of the Quasi-free Electron in H$_2$, D$_2$
+and O$_2$: Probing Intermolecular Potentials within the Local Wigner-Seitz
+Model,}'' J. Chem. Phys. $\mathbf{143}$, $224303$ ($2015$)``}
 
-\Description{\MarginText{Published}C. M. Evans, Baxter Flor, Kamil Krynski, Zachary Streeter, and G. L. Findley,``\textit{Energy of the Quasi-Free Electron in CO and HD: Probing Intermolecular Potentials within the Local Wigner-Seitz model,}'' J. Chem. Phys. $\mathbf{149}$, $064307$ ($2018$).}
+\Description{\MarginText{Published}C. M. Evans, Baxter Flor, Kamil Krynski,
+Zachary Streeter, and G. L. Findley,``\textit{Energy of the Quasi-Free Electron
+in CO and HD:\@ Probing Intermolecular Potentials within the Local Wigner-Seitz model,}'' J. Chem. Phys. $\mathbf{149}$, $064307$ ($2018$).}
 
-\Description{\MarginText{Published}Zachary L. Streeter, Frank L. Yip, Robert R. Lucchese, Benoit Gervais, and C. William McCurdy,``\textit{Dissociation dynamics of the water dication following one-photon double ionization I: Theory,}'' Phys. Rev. A, $\mathbf{98}$, $053429$ ($2018$).}
+\Description{\MarginText{Published}Zachary L. Streeter, Frank L. Yip, Robert R.
+Lucchese, Benoit Gervais, and C. William McCurdy,``\textit{Dissociation dynamics
+of the water dication following one-photon double ionization I:\@ Theory,}'' Phys. Rev. A, $\mathbf{98}$, $053429$ ($2018$).}
 
-\Description{\MarginText{Published}D. Reedy, J. B. Williams, B. Gaire, A. Gatton, M. Weller, A. Menssen, T. Bauer, K. Henrichs, Ph. Burzynski, B. Berry, Z. L. Streeter, J. Sartor, I. Ben-Itzhak, T. Jahnke, R. D\"orner, Th. Weber, and A. L. Landers,``\textit{Dissociation dynamics of the water dication following one-photon double ionization I: Experiment,}'' Phys. Rev. A, $\mathbf{98}$, $053430$ ($2018$).}
+\Description{\MarginText{Published}D. Reedy, J. B. Williams, B. Gaire, A.
+Gatton, M. Weller, A. Menssen, T. Bauer, K. Henrichs, Ph. Burzynski, B. Berry,
+Z. L. Streeter, J. Sartor, I. Ben-Itzhak, T. Jahnke, R. D\"orner, Th. Weber, and
+A. L. Landers,``\textit{Dissociation dynamics of the water dication following
+one-photon double ionization I:\@ Experiment,}'' Phys. Rev. A, $\mathbf{98}$, $053430$ ($2018$).}
 
 \Description{\MarginText{Published}Kirk A. Larsen, Thomas N. Rescigno, Travis
   Severt, Zachary L. Streeter, Wael Iskandar, Saijoscha Heck, Averell Gatton,
@@ -360,7 +419,7 @@ Molecular, and Optical Physics, Milwaukee, WI, May $27-31$, $2019$.}
   Thorsten Weber,``\textit{Photoelectron and fragmentation dynamics of the H$^+ +$
   H$^+$
 dissociative channel in NH$_3$ following direct single-photon double
-ionization},''Phys. Rev. Res., $\mathbf{2}$, $043056$ ($2020$).}
+ionization},`Phys. Rev. Res., $\mathbf{2}$, $043056$ ($2020$).}
 
 \Description{\MarginText{Published}Kirk A. Larsen, Thomas N. Rescigno, Zachary
   L. Streeter, Wael Iskandar, Saijoscha Heck, Averell Gatton, Elio G.
