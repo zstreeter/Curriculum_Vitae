@@ -162,12 +162,31 @@ LinkedIn, and/or check out my github page!}
 \NewEntry{September 2021 to present}{Advanced Micro Devices}
 
 \Description{\MarginText{AMD}Part of the Deep Learning Frameworks team. Worked on
-improving novel AI models with end-to-end specifications for AMD hardware. Used profilers
-to pin-point bottlenecks and further optimized kernels. Directed projects that contributed
-to company's AI direction at large. Worked with several large clients in numerous asks. 
-Furthered understanding of AI research directions and advised how AMD can leverage these 
-novel neural-network architectures.\newline
+improving novel AI models with end-to-end specifications for AMD hardware.
+\begin{itemize}
+  \item Collaborated with several large clients on various tasks.
+  \item Major contributor to an internal project that provides dashboards and metrics on the performance of novel AI models using AMD hardware.
+  \item Directed projects that significantly influenced the company's AI strategy.
+    \begin{itemize}
+      \item \textbf{Clusters:} Leveraged my experience at NERSC to ensure the hardware setup and software stack followed best practices for AI scaling.
+      \item \textbf{Knowledge:} Equipped the team with essential frameworks for analyzing multi-node performance, including strong and weak scaling, and using roofline analysis for targeted optimizations.
+    \end{itemize}
+  \item Some contributions to frameworks (not including creating/maintaining ROCm ports):
+    \begin{itemize}
+      \item \textbf{PyTorch:} Led ROCm compatibility with Inductor/triton for the day one release of 2.0 functionality.
+      \item \textbf{Triton:} Managed compatibility on our Navi lineup, overseeing the development of triton implementation to leverage WMMA instructions.
+      \item \textbf{TensorFlow:} Led compatibility and performance enhancements on our Navi lineup.
+      \item \textbf{XLA:} Helped team understand cost model and developed the AMD port of the Profile Guided Latency Estimator targeting multi-GPU collectives.
+      \item \textbf{Jax:} Led Navi compatibility efforts.
+      \item \textbf{TinyGrad:} Developed a fuzzer (fuzzyHSA) that exposes a Python API for the Kernel Fusion driver, facilitating quicker investigation of the attack surface of AMD GPUs.
+    \end{itemize}
+  \item Used profilers like OmniPerf and OmniTrace to identify bottlenecks and optimize kernels.
+  \item Advanced understanding of AI research directions and advised on how AMD can leverage new neural-network architectures.
+  \item Regarded as "Professor-in-house" and led a paper series to enhance understanding of novel techniques as the AI industry evolves.
+  \item Mentor summer interns so they have an enjoyable and educational experience at AMD!
+\end{itemize}
 Manager: Peng \textsc{Sun}\ \ $\cdotp$\ \ \href{mailto:Peng.Sun@amd.com}{Peng.Sun@amd.com}}
+
 
 %----------------------------------------------------------------------------------------
 %	INTERNSHIPS and RESEARCH EXPERIENCE
@@ -227,6 +246,17 @@ SRC.\@ \\ Reference: Cherice \textsc{Evans}\ \  +$1$ ($718$) $997$ $4216$\ \ $\c
 
 % \titlerule \vspace{1em}
 \hrule \vspace{1em}
+
+\NewEntry{Spring 2021}{\href{https://github.com/yourusername/fuzzyHSA}{fuzzyHSA}}
+
+\Description{\MarginText{Author and Maintainer}fuzzyHSA is a python API designed to interact with the Kernel Fusion Driver (KFD) on AMD GPUs, serving as a tool for fuzz testing the lower-level software stack. Fuzz testing involves sending unexpected or random inputs to the hardware to uncover vulnerabilities and ensure robustness. The main features of fuzzyHSA include:
+  \begin{itemize}
+    \item Simplified API for interacting with KFD.
+    \item Enhanced debugging capabilities for kernel fusion operations.
+    \item Fuzz testing to assess the robustness of AMD hardware by provoking unintended behavior and observing how gracefully the system handles these scenarios.
+  \end{itemize}
+  fuzzyHSA aims to provide a clear insight into the hardware's robustness by identifying how the firmware or other managing programs respond to atypical inputs. This project is currently in active development, continuously evolving to meet the needs of GPU programming and kernel fusion optimization, ensuring AMD hardware can handle unexpected inputs without compromising stability.
+}
 
 \NewEntry{Spring 2020}{\href{https://quantumgrid.readthedocs.io/en/latest/}{quantumGrid}} % github
 
